@@ -1,0 +1,25 @@
+<h1>{{title}}</h1> 
+<dl>
+ 
+<button (click)="decrementar(1)">-</button>
+<button (click)="incrementar(1)">+</button>
+<button (click)="reset()">Reset</button>
+
+<h1>{{nombre |uppercase}}</h1>
+<dl>
+    <td>Nombre</td>
+     <dd>{{nombre}}</dd>
+     <td>Precio</td>
+     <dd>{{precio| number:' .2'}}</dd>
+     <td>Método</td>
+     <dd>{{getArticuloInfo ()}}</dd>
+     <button (cllick)="cambiarPrecio()">
+        Cambiar Precio 
+     </button>
+     <button (cllick)="cambiarNombre()">
+        Cambiar Nombre
+     </button>
+     <button (cllick)="resetForm()">
+        Reset
+     </button>
+</dl>
